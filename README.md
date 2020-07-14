@@ -1,2 +1,2 @@
 # portfolio
-A portfolio created with Bootstrap and a few Javascript libraries.
+A portfolio created with Bootstrap and several Javascript libraries.

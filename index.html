@@ -1,74 +1,203 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css" integrity="sha256-++6EUpJmVNx8V1iT5u+aiOczfZ++FPa4sfEjG+txhOk=" crossorigin="anonymous" />
-        <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js" integrity="sha256-wypDCQw+qwWtdARZAAtUMv/1SWOEB1XHZwAFoNc9Wn8=" crossorigin="anonymous"></script>
-        <title>Dimand Edvárd's Portfolio</title>
-    </head>
-
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand mx-3" href="./">&lt;dimand edvárd/&gt; </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-5">
-                <li class="nav-item mx-3 ">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+      <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+      <link rel="icon" type="image/svg" href="./img/myAvatar.svg">
+      <title>Dimand Edvárd's Portfolio</title>
+   </head>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+         <a class="navbar-brand mx-3" href="./">&lt;dimand edvárd/&gt; </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-5" id="menu" >
+               <li class="nav-item mx-3 " data-menuanchor="home">
                   <a class="nav-link" href="#home">home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a class="nav-link" href="#">previous works</a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a class="nav-link" href="#">education</a>
-                </li>
-                <li class="nav-item mx-3 ">
-                  <a class="nav-link" href="#">contact</a>
-                </li>
-              </ul>
+               </li>
+               <li class="nav-item mx-3" data-menuanchor="about-me">
+                  <a class="nav-link" href="#about-me">about me</a>
+               </li>
+               <li class="nav-item mx-3" data-menuanchor="previous-works">
+                  <a class="nav-link" href="#previous-works">previous works</a>
+               </li>
+               <li class="nav-item mx-3" data-menuanchor="contact">
+                  <a class="nav-link" href="#contact">contact</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <body>
+      <div id="fullpage">
+         <div class="section home" id="section0">
+            <div class="avatar-container  row justify-content-center">
+               <img class="avatar animate__animated animate__heartBeat"src="./img/myAvatar.svg" alt="Avatar Pic">
             </div>
-          </nav> 
-    </header>
-
-    <body>
-        <section class="home" id="home">
-
-          <div class="avatar-container my-5 row justify-content-center">
-            <img class="avatar"src="./img/myAvatar.svg" alt="Avatar Pic">
-          </div>
-
             <div class="portfolio-title mb-5">
-                <h1 class="name"></h1>
-                <div class="square my-3"></div>
-                <h3 class="subtitle"></h3>
+               <h1 class="name"></h1>
+               <div class="square my-3"></div>
+               <h3 class="subtitle"></h3>
             </div>
-            <div class="spacer-1">
+         </div>
+         <div class="section about-me" id="section2">
+            <ul class="timeline">
+               <li>
+                  <div class="timeline-badge babes"><i class="glyphicon glyphicon-check"></i></div>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4 class="timeline-title">Babeş-Bolyai University</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2016 October - 2020</small></p>
+                     </div>
+                     <div class="timeline-body">
+                        <p>Started my college education in Computer Science.</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="timeline-inverted">
+                  <div class="timeline-badge continental"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4 class="timeline-title">ContiTech Fluid Automotive Romania</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2017 June - September</small></p>
+                     </div>
+                     <div class="timeline-body">
+                        <p>Got a summer job where I created my first app written in C# that calculated bonus salaries based on performance and other information.</p>
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="timeline-badge msg"><i class="glyphicon glyphicon-check"></i></div>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4 class="timeline-title">.msg systems Romania</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2018 June - August</small></p>
+                     </div>
+                     <div class="timeline-body">
+                        <p>Got hired for a Java development internship where I was taught the basics of server-side development, Git, Agile, databases and got a good feel for what web apps are like.</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="timeline-inverted">
+                  <div class="timeline-badge melotel"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4 class="timeline-title">MeloTel Phone Company Canada</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2018 November - 2019 August</small></p>
+                     </div>
+                     <div class="timeline-body">
+                        <p>Landed my first real job as a Remote Backend Developer where we created lots of amazing applications using mostly Laravel and PHP.</p>
+                     </div>
+                  </div>
+               </li>
+               <!-- <li>
+                  <div class="timeline-badge babes"><i class="glyphicon glyphicon-check"></i></div>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4 class="timeline-title">Babeş-Bolyai University</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2019 July</small></p>
+                     </div>
+                     <div class="timeline-body">
+                        <p>Graduated college.</p>
+                     </div>
+                  </div>
+                  </li> -->
+               <li class="timeline">
+                  <div class="timeline-badge babes"><i class="glyphicon glyphicon-credit-card"></i></div>
+                  <div class="timeline-panel">
+                     <div class="timeline-heading">
+                        <h4 class="timeline-title">Freelancing</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2019 December - Present</small></p>
+                     </div>
+                     <div class="timeline-body">
+                        <p>Started learning new technologies so I can become a full stack developer and did a few freelancing projects.</p>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="section previous-works" id="section1">
 
+            <div class="slide" id="slide1">
+               <div class="previous-works-wrapper">
+                  <div class="p-w-img">
+                     <img src="img\dafeeder.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="p-w-description">
+                     <h1>DaFeeder</h1>
+                     <h5> MeloTel Phone Company</h5>
+                     <div class="details">
+                        <p>
+                           Took part of the two-man team that developed DaFeeder, a cutting-edge web-based telemarketing software 
+                           built with Laravel and React that helps companies manage campaigns
+                           much easier with a user-friendly interface featuring Slack, 4psa and other API integrations.
+                        </p>
+                        <br>
+                        <h6><a target="_blank" href="https://dafeeder.com/">See how it works</a></h6>
+                        <br>
+                        <h6><a target="_blank" href="https://melotel.com/blog/try-dafeeder-preview-dialer-free-for-30-days/">Details</a></h6>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="skill-container">
-        
+
+            <div class="slide" id="slide2">
+               <div class="previous-works-wrapper">
+                  <div class="p-w-img">
+                     <img src="img\pinchr.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="p-w-description">
+                     <h1>Pinchr</h1>
+                     <h5> Brainiac</h5>
+                     <div class="details">
+                        <p>
+                           My most recent and one of my biggest freelancing projects, a web app that tracks
+                           your interest keywords that appear in any Facebook group you are part of.
+                           <br>
+                           The application has been created with Laravel and Bootstrap and features Facebook's Graph API.
+                           <br><br>
+                           The project has been shut down.
+                        </p>
+                        <br>
+                        <br>
+                        <h6><a target="_blank" href="https://picnhr.xyz">Pinchr</a></h6>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </section>
-
-        <section style="margin-top: 20em;"> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores esse adipisci necessitatibus nisi architecto debitis harum maxime itaque! Praesentium veritatis atque temporibus ullam. Perspiciatis omnis recusandae sapiente, consectetur animi, expedita saepe assumenda alias voluptates repellendus quod eveniet natus molestias non earum eos aliquid ad? Cum, temporibus. Aut, labore. Dicta voluptatum commodi, aut libero beatae aliquam cum facilis, dolore nostrum quibusdam cumque inventore iure. Quisquam, officiis incidunt! Obcaecati animi, eius dolorem et esse voluptates facilis tenetur nihil voluptatum ipsa iste autem velit voluptate, nemo ab amet vel unde repudiandae temporibus? Vel quibusdam distinctio deleniti nobis enim quis perferendis exercitationem eveniet ea, ex ipsam nihil facilis ad neque cumque. Quaerat obcaecati incidunt doloremque. Obcaecati qui sed accusantium quae dolores, ut nisi dignissimos quidem est reprehenderit iure ad excepturi et voluptatem a itaque delectus. Voluptates error et laborum voluptate possimus! Atque dolores maiores ea nisi odit reprehenderit laboriosam officia iste maxime fugiat veritatis odio, optio illo exercitationem asperiores, nihil, aspernatur eaque voluptatem amet veniam nesciunt aut autem et. Nemo aperiam beatae quidem sunt adipisci odit provident quo eveniet vero. Tenetur dolorem error, explicabo itaque facere atque doloribus vero vel, omnis aspernatur nesciunt excepturi quos, provident repellat quibusdam eligendi labore quae eum! Maiores repellendus illo asperiores repellat assumenda, accusantium eveniet quaerat suscipit labore possimus quia laudantium, magnam magni! At consequatur consectetur laborum earum quaerat sunt animi, voluptas magnam. Esse voluptate magnam illo recusandae enim et cumque praesentium porro accusamus, tempora atque libero provident voluptas voluptates! Repudiandae, voluptatem error commodi magni dolorum illo blanditiis at vitae, facilis quas minus ut dolores, repellendus animi deleniti! Expedita odio ullam itaque possimus modi optio temporibus qui voluptates aut, veritatis quibusdam labore! Minus deleniti iusto nostrum quod exercitationem blanditiis suscipit asperiores et inventore nam odit quaerat delectus libero quisquam, aperiam eum assumenda in aspernatur facere consequatur officia totam id.
-        </section>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
-        <script src="index.js"></script>
-    </body>
-
-    <footer>
-
-    </footer>
-
+      
+         </div>
+         <div class="section contact" id="section3">
+            <div class="contact-wrapper">
+               <div class="contact-title">
+                  Get in touch
+               </div>
+               <div class="contact-info-wrapper">
+                  <div class="contact-info">
+                     <!--  -->
+                     <div class="info-item"><i class="fa fa-address-book" aria-hidden="true"></i> <a target="_blank" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=edi.dimand%22gmail.com">edi.dimand@gmail.com</a></div>
+                     <div class="info-item"><i class="fab fa-linkedin" aria-hidden="true"></i> <a target="_blank" href="https://www.linkedin.com/in/edvard-dimand1997/">Edvárd Dimand</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+      <script type="text/javascript" src="./js/fullpage.js"></script>
+      <script type="text/javascript" src="./js/scrolloverflow.js"></script>
+      <script src="./js/index.js"></script>
+   </body>
+   <footer>
+   </footer>
 </html>
